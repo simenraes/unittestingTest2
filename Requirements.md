@@ -20,7 +20,7 @@ Een Friend heeft:
 
 Bij een Lucky Friend gaat het level 5 keer zo snel omhoog.
 Je kan alleen Lucky Friend worden als je een 3 sterren vriendschap hebt met deze Friend, en als het level minstens 60 is.
-Let op: je wordt niet automatisch Lucky Friend, maar pas vanaf dit moment heb je kans dat de parameter isLucky true is.
+Let op: je wordt niet automatisch Lucky Friend, maar pas vanaf dit moment heb je kans dat de parameter isLucky true wordt. Die kans is random en behoort niet tot de update-functie.
 Zolang er geen interaction met een Lucky Friend geweest is blijft deze Friendship Lucky.
 Zodra er een interaction met een Lucky Friend geweest is dan is de Friendship niet meer Lucky.
 
