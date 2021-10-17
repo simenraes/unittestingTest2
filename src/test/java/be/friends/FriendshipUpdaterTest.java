@@ -79,10 +79,24 @@ public class FriendshipUpdaterTest {
         assertEquals(2, app.friends[0].nrOfStars);
     }
     @Test
+    void star2Level14() {
+        FriendshipUpdater app = new FriendshipUpdater(new Friend[]{new Friend("Aagje", 2, 14, false, true)});
+        app.update();
+        assertEquals(15, app.friends[0].friendshipLevel);
+        assertEquals(2, app.friends[0].nrOfStars);
+    }
+    @Test
     void star2Level29() {
         FriendshipUpdater app = new FriendshipUpdater(new Friend[]{new Friend("Aagje", 2, 29, false, true)});
         app.update();
         assertEquals(0, app.friends[0].friendshipLevel);
+        assertEquals(3, app.friends[0].nrOfStars);
+    }
+    @Test
+    void star3Level17() {
+        FriendshipUpdater app = new FriendshipUpdater(new Friend[]{new Friend("Aagje", 3, 17, false, true)});
+        app.update();
+        assertEquals(18, app.friends[0].friendshipLevel);
         assertEquals(3, app.friends[0].nrOfStars);
     }
     @Test
@@ -93,10 +107,17 @@ public class FriendshipUpdaterTest {
         assertEquals(3, app.friends[0].nrOfStars);
     }
     @Test
-    void star3Level60() {
-        FriendshipUpdater app = new FriendshipUpdater(new Friend[]{new Friend("Aagje", 3, 60, false, true)});
+    void star3Level65() {
+        FriendshipUpdater app = new FriendshipUpdater(new Friend[]{new Friend("Aagje", 3, 65, false, true)});
         app.update();
-        assertEquals(61, app.friends[0].friendshipLevel);
+        assertEquals(66, app.friends[0].friendshipLevel);
+        assertEquals(3, app.friends[0].nrOfStars);
+    }
+    @Test
+    void star3Level589() {
+        FriendshipUpdater app = new FriendshipUpdater(new Friend[]{new Friend("Aagje", 3, 589, false, true)});
+        app.update();
+        assertEquals(590, app.friends[0].friendshipLevel);
         assertEquals(3, app.friends[0].nrOfStars);
     }
     @Test
@@ -117,5 +138,11 @@ public class FriendshipUpdaterTest {
         FriendshipUpdater app = new FriendshipUpdater(new Friend[]{new Friend("Aagje", 3, 60, true, false)});
         app.update();
         assertTrue(app.friends[0].isLucky);
+    }
+    @Test
+    void luckyAndNoInteraction() {
+        FriendshipUpdater app = new FriendshipUpdater(new Friend[]{new Friend("Aagje", 3, 68, true, false)});
+        app.update();
+        assertEquals(68, app.friends[0].friendshipLevel);
     }
 }
