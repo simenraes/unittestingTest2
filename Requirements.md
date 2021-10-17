@@ -19,8 +19,10 @@ Een Friend heeft:
 * didSomeInteractionToday: is er vandaag interactie geweest met deze Friend 
 
 Bij een Lucky Friend gaat het level 5 keer zo snel omhoog. 
-Je kan alleen Lucky Friend worden als je een 3 sterren vriendschap hebt met deze Friend. 
-Het level moet dan ook minstens 60 zijn. 
+Je kan alleen Lucky Friend worden als je een 3 sterren vriendschap hebt met deze Friend. Het level moet dan ook minstens 60 zijn.
+
+Let op: je wordt niet automatisch Lucky Friend, maar pas vanaf dit moment heb je **kans** dat de parameter isLucky true wordt. Die kans is random en behoort niet tot de update-functie.
+
 Zodra er een interaction met een Lucky Friend geweest is dan is de Friendship niet meer Lucky. 
 
 Een volledige test set is voorzien voor deze code. 
