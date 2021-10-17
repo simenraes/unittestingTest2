@@ -114,6 +114,12 @@ public class FriendshipUpdaterTest {
         assertEquals(3, app.friends[0].nrOfStars);
     }
     @Test
+    void star3Level57NotLucky() {
+        FriendshipUpdater app = new FriendshipUpdater(new Friend[]{new Friend("Aagje", 3, 57, false, true)});
+        app.update();
+        assertFalse(app.friends[0].isLucky);
+    }
+    @Test
     void star3Level589() {
         FriendshipUpdater app = new FriendshipUpdater(new Friend[]{new Friend("Aagje", 3, 589, false, true)});
         app.update();
