@@ -32,7 +32,7 @@ public class FriendshipUpdater {
             }
             if (!friend.isLucky && !friend.didSomeInteractionToday) {
                 friend.isLucky = true;
-                friend.friendshipLevel -= 5;
+                friend.friendshipLevel -= 4;
             }
         }
     }
