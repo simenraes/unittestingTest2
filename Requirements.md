@@ -18,10 +18,11 @@ Een Friend heeft:
 * isLucky: boolean 
 * didSomeInteractionToday: is er vandaag interactie geweest met deze Friend 
 
-Bij een Lucky Friend gaat het level 5 keer zo snel omhoog. 
-Je kan alleen Lucky Friend worden als je een 3 sterren vriendschap hebt met deze Friend. 
-Het level moet dan ook minstens 60 zijn. 
-Zodra er een interaction met een Lucky Friend geweest is dan is de Friendship niet meer Lucky. 
+Bij een Lucky Friend gaat het level 5 keer zo snel omhoog.
+Je kan alleen Lucky Friend worden als je een 3 sterren vriendschap hebt met deze Friend, en als het level minstens 60 is.
+Let op: je wordt niet automatisch Lucky Friend, maar pas vanaf dit moment heb je kans dat de parameter isLucky true is.
+Zolang er geen interaction met een Lucky Friend geweest is blijft deze Friendship Lucky.
+Zodra er een interaction met een Lucky Friend geweest is dan is de Friendship niet meer Lucky.
 
 Een volledige test set is voorzien voor deze code. 
 Als je zelf nog missing testen vindt mag je deze toevoegen. 
