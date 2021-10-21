@@ -12,7 +12,7 @@ public class FriendshipUpdater {
         for (Friend friend : friends) {
             boolean wasLucky = !friend.isLucky;
             if (friend.isLucky && friend.didSomeInteractionToday) {
-                friend.isLucky = !friend.isLucky;
+                friend.isLucky = false;
             }
             if (!wasLucky)
                 friend.friendshipLevel += 4;
